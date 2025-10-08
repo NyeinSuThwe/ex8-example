@@ -23,6 +23,21 @@ h1 {
   opacity: 0.9;
   margin: 0 0 0.25rem;
 }
+.author { margin: 0 0 0.5rem; }
+
+.total-time,
+#directions .step-time {
+  font-weight: 700; /* bold total & per-step times */
+}
+
+img {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin: 0.75rem 0 1rem;
+  border-radius: 8px;
+}
+
 
 ul, ol {
   margin-left: 25px;
