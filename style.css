@@ -1,4 +1,9 @@
-/* Style the body to set default styles for the page.*/
+/* Base / Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   background-color: #0e0d13;
   color: #e7e7eb;
@@ -6,11 +11,10 @@ html {
   font-size: 16px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+/* Typography */
+h1, h2 {
+  text-transform: uppercase;
 }
-h1, h2 { text-transform: uppercase; }
 
 h1 {
   font-size: 2.25rem;
@@ -19,33 +23,46 @@ h1 {
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.25rem;   /* larger than default */
   opacity: 0.9;
   margin: 0 0 0.25rem;
 }
-.author { margin: 0 0 0.5rem; }
 
+.author {
+  margin: 0 0 0.5rem;
+}
+
+/* Times (overall and per-step) */
 .total-time,
 #directions .step-time {
-  font-weight: 700; /* bold total & per-step times */
+  font-weight: 700; /* bold per spec */
 }
 
+/* Image */
 img {
-  height: 300px;
-  width: auto;
+  height: 300px;    /* required */
+  width: auto;      /* required */
   display: block;
   margin: 0.75rem 0 1rem;
-  border-radius: 8px;
+  border-radius: 8px; /* optional nicety */
 }
-#ingredients ul li { list-style: square; }
 
-#directions li time.step-time { color: #f25f4c; }
+/* Lists */
+#ingredients ul li {
+  list-style: square;  /* ingredients bullets */
+}
 
+#directions li time.step-time {
+  color: #f25f4c;      /* colored times in list */
+}
+
+/* Links — all pseudo classes */
 a:link    { color: #ffd803; }
 a:visited { color: #d4bff9; }
 a:hover   { color: #f25f4c; text-decoration: underline; }
 a:active  { color: #29c7ac; }
 
+/* Layout niceties */
 body {
   max-width: 60ch;
   margin: 0 auto;
@@ -57,17 +74,7 @@ header, main, section {
   padding-bottom: 0.75rem;
 }
 
-
-
-
+/* indent default */
 ul, ol {
   margin-left: 25px;
 }
-/*select html and set the background color, color, font family with fallback, and font size. */
-/*change img height to 300px and width to auto*/
-/*change subtitle font size to larger than the default. */
-/*Change the times to a bold font-weight*/
-/*select the li inside of ingredients to list-style: square*/
-/*select the times inside of the lists and change to a different color*/
-/*select the link and change it's color; */
-/*select h1 and h2 elements and change their case to uppercase*/
