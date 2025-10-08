@@ -4,14 +4,15 @@
   padding: 0;
 }
 
+/* Page colors and typography */
 html {
-  background-color: #f7ede2;  
-  color: #463f3a;            
+  background-color: #f7ede2;          /* creamy fall tone */
+  color: #463f3a;                     /* warm brown text */
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   font-size: 16px;
 }
 
-/* Typography */
+/* Headings */
 h1, h2 {
   text-transform: uppercase;
 }
@@ -57,10 +58,10 @@ img {
 }
 
 /* Links — all pseudo classes */
-a:link    { color: #ffd803; }
-a:visited { color: #d4bff9; }
+a:link    { color: #9c6644; }   /* deep caramel */
+a:visited { color: #8b5e3c; }
 a:hover   { color: #f25f4c; text-decoration: underline; }
-a:active  { color: #29c7ac; }
+a:active  { color: #b85c38; }
 
 /* Layout niceties */
 body {
@@ -74,7 +75,7 @@ header, main, section {
   padding-bottom: 0.75rem;
 }
 
-/* indent default */
+/* Keep default list indent reasonable */
 ul, ol {
   margin-left: 25px;
 }
