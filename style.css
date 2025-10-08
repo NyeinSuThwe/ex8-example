@@ -37,6 +37,15 @@ img {
   margin: 0.75rem 0 1rem;
   border-radius: 8px;
 }
+#ingredients ul li { list-style: square; }
+
+#directions li time.step-time { color: #f25f4c; }
+
+a:link    { color: #ffd803; }
+a:visited { color: #d4bff9; }
+a:hover   { color: #f25f4c; text-decoration: underline; }
+a:active  { color: #29c7ac; }
+
 
 
 ul, ol {
