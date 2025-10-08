@@ -46,6 +46,18 @@ a:visited { color: #d4bff9; }
 a:hover   { color: #f25f4c; text-decoration: underline; }
 a:active  { color: #29c7ac; }
 
+body {
+  max-width: 60ch;
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+header, main, section {
+  padding-bottom: 0.75rem;
+}
+
+
 
 
 ul, ol {
